@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Royal Clothing</title>
+</head>
+<body class="contact-body">
+    <header class="header">
+        <nav>
+          <div class="header-logo-container">
+            <a class="header-logo" href="#"><img src="/pic/royallogo.png"></a>
+          </div>
+          <ul class="header-menu">
+            <li><a class="header-links" href="index.html">Home</a></li>
+            <li><a class="header-links" href="shop.html">Shop</a></li>
+            <li><a class="header-links" href="about.html">About</a></li>
+            <li><a class="header-links" href="contact.html">Contact</a></li>
+          </ul>
+        
+          <div class="header-icon">
+          
+            <i class="fa fa-user" id="user-icon" aria-hidden="true"></i>
+  
+            <!-- <button class="shopping-cart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+              </svg>                 
+            </button> -->
+  
+            <i class='bx bxs-shopping-bag shopping-cart' id="cart-icon"></i>
+        
+            <button class="header-bars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+              </svg>
+            </button>
+  
+          </div>  
+
+            <!-- User -->
+         <div class="user-login">
+          <h2>Login</h2>
+          <div class="user-login-container">
+            <input type="text" placeholder="Login" />
+            <input type="password" placeholder="Password" />
+            <button>Login</button>
+            <p>Don't have account <a>Sign up</a></p>
+            <i class='bx bx-x' id="close-user-login"></i>
+          </div>
+         </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-container">
+                  
+                  <!-- <div class="cart-box"> -->
+                    <!-- <img src="/shop/varsity.png" class="cart-img">
+                    
+                    <div class="cart-detail">
+                        <div class="cart-product-title">Varsity</div>
+                        <div class="cart-price">$50</div>
+                        <input type="number" value="1" class="cart-quantity">
+                      </div>  
+                     Cart Remove
+                    <i class='bx bxs-trash-alt cart-remove' ></i> -->
+                 <!-- </div> -->
+    
+                </div>
+    
+                <div class="total">
+                  <div class="total-title">Total</div>
+                  <div class="total-price">$0</div>
+                </div>
+    
+                <button  type="button" class="btn-buy-now ">Buy Now</button>
+                <!--Cart close-->
+                <i class='bx bx-x' id="close-cart"></i>
+    
+              </div>
+        
+        </nav>
+        </header>
+
+         <!--Mobile Nav-->
+      <div class="mobile-nav" draggable="false">
+        <nav>
+         
+      
+          <ul class="mobile-nav-menu">
+           <div class="mobile-logo">
+            <a class="mobile-header-logo" href="#"><img src="/pic/royallogo.png"></a>
+          </div>
+
+            <li><a class="mobile-nav-link" href="index.html">Home</a></li>
+            <li><a class="mobile-nav-link" href="shop.html">Shop</a></li>
+            <li><a class="mobile-nav-link" href="about.html">About</a></li>
+            <li><a class="mobile-nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    <!--End Mobile Nav-->
+
+        <main class="main-contact">
+            <section class="contact container">
+                <div class="contact-in">
+                    <div class="contact-map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123349.74500735095!2d120.7227612854537!3d14.954937226181652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396564b41cc5e23%3A0xa6b7b5e9b0734854!2sApalit%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1703557432085!5m2!1sen!2sph" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-form">
+                        <h1>Contact us</h1>
+                        <form>
+                            <input type="text" placeholder="Name" class="contact-text" />
+                            <input type="text" placeholder="Email" class="contact-text" />
+                            <textarea placeholder="Message" class="contact-textarea"></textarea>
+                            <input type="submit" name="submit" class="contact-btn" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+
+            <footer class="footer section">
+
+              <div class="footer-content">
+                <div class="footer-content-container">
+                  <img src="/pic/royallogo.png">
+                  <h3>Contact</h3>
+                  <p><span>Address: </span>Apalit Pampanga</p>
+                  <p><span>Phone: </span>+63995215122</p>
+                  <p><span>Hours: </span>10:00 AM - 6:00 PM</p>
+                  
+                  <h3 class="socials-header">Follow us</h3>
+                  <div class="socials-container">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-instagram-alt' ></i>
+                  </div>
+                </div>
+                
+                <div class="footer-links-container">
+                  <h3>Link</h3>
+                  <div class="footer-links-box">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </div>
+                </div>
+    
+                <div class="footer-account">
+                  <h3>My Account</h3>
+                  <div class="footer-links-box">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Help</a></li>
+                  </div>
+                </div>
+    
+             
+                
+              </div>
+    
+              <div class="footer-last">
+                <a href="">Powered by: Jay Vergara</a>
+              </div>
+            </footer>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="module" src="src/main.js"></script>
+</body>
+</html>

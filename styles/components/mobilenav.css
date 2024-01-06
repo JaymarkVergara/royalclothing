@@ -1,0 +1,51 @@
+body{
+
+}
+.mobile-nav.active{
+    left: 0;
+
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    z-index: 9999;
+    height: 100%;
+    background-color: var(--clr-gray-400);
+    left: -100%;
+    transition: 0.3s; 
+}
+
+.mobile-nav-menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    height: 100%;
+}
+
+.mobile-nav-link{
+    color: var(--clr-dark);
+    font-size: var(--sizes-xl);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+}
+
+.mobile-nav-link:hover{
+    color: var(--clr-gray-500)
+}   
+
+.mobile-logo{
+    margin-top: 10px;
+}
+
+
+
+.mobile-header-logo img{
+    width: 50px;
+
+}
