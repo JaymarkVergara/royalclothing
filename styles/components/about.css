@@ -1,16 +1,19 @@
 .about{
-    margin-top: 75px;
+    margin-top: 5rem;
     /* height: 100vh; */
 
 }
 
+
+
 .about-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
     gap: 1rem;
     height: 100vh;
+  
 
 }
 
@@ -19,7 +22,7 @@
 /* } */
 
 .about-btn{
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .about-title{
@@ -38,13 +41,13 @@
 
 /* xs */
 @media (min-width: 475px){
-    .about-title{
-        font-size: var(--sizes-2xl);
-    }
+ 
     
     .about-description{
         font-size: var(--sizes-base);
     }
+
+    
 }
 
 /* sm */
@@ -79,6 +82,11 @@
 @media (min-width: 1024px){
     .about-container{
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .shop-title{
+        font-size: var(--sizes-4xl);
     }
 
     .about-description-container{
@@ -92,7 +100,7 @@
     .about-title{
         margin-bottom: 1rem;
         letter-spacing: -0.05em;
-        font-size: var(--sizes-5xl);
+        font-size: var(--sizes-3xl);
     }
     
     .about-description{
@@ -105,9 +113,11 @@
 }
 
 /* xl */
-/* @media (min-width: 1280px){
-  
-} */
+@media (min-width: 1280px){
+    .shop-title{
+        font-size: var(--sizes-7xl);
+    }
+}
 
 /* 2xl */
 /* @media (min-width: 1536px){
