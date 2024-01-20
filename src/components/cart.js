@@ -49,7 +49,7 @@ const cart = () => {
 
     //buy now clicked
     function BuyNowClicked(){
-        alert('Your order is Placed');
+        alert('Your order is placed');
         let cartContent = document.getElementsByClassName('cart-container')[0];
         while(cartContent.hasChildNodes()){
             cartContent.removeChild(cartContent.firstChild);
@@ -93,7 +93,7 @@ const cart = () => {
         let cartItems = document.getElementsByClassName('cart-container')[0];
         let cartItemName = cartItems.getElementsByClassName('cart-product-title')
         for(let i = 0; i < cartItemName.length; i++){
-            if(cartItemName[i].innerHTML     === title){
+            if(cartItemName[i].innerHTML  === title){
                 alert('you already have this item to cart');
                 return;
             }
@@ -149,7 +149,7 @@ const cart = () => {
     } 
 
     function goshop(){
-        window.location.href = 'shop.html';
+        window.location.href = '#shop';
     }
 }
 

@@ -29,24 +29,38 @@
     border-radius: 4px;
 }
 
+.featured-products{
+   margin: 5rem;
+}
+
 
 .featured-content-container{
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.product-img{
+    padding: 0.5rem;
+    overflow: hidden;
+    object-fit: contain;
 }
 
 
 .featured-content-box{
     position: relative;
-    transition: all 1s ease-in-out;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 
 .featured-content-box:hover {
-    border: 1px solid var(--clr-dark);
-    cursor: pointer;
+    /* border: 1px solid var(--clr-dark); */
+}
+
+.featured-content-box:hover img{
+    transform: scale(0.8);
 }
 
 .bx-shopping-bag{

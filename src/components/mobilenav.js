@@ -6,21 +6,47 @@ const mobileNav = () => {
 
     let isMobileNavOpen;
 
+
+
     headerBar.addEventListener('click', () => {
      
         isMobileNavOpen = !isMobileNavOpen;
-        
-        if(isMobileNavOpen){
-            // mobileNav.style.display = 'flex';
+
+        if(isMobileNavOpen === true){
+            mobileNav.style.display = 'flex';
             mobileNav.classList.add('active');
             document.body.style.overflowY = 'hidden';
             document.body.style.overflowX = 'hidden';
         }else{
-            // mobileNav.style.display = 'none';
+           
             mobileNav.classList.remove('active');
+            // mobileNav.style.display = 'none';
             document.body.style.overflowX = 'auto';
             document.body.style.overflowY = 'auto';
+
+           
         }
+
+       
+            mobileNavLinks.forEach(links => {
+                links.addEventListener('click', () => {
+                    isMobileNavOpen = false;
+                    document.getElementsByClassName('mobile-nav')[0].style.display='none';
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflowX = 'auto';
+                    document.body.style.overflowY = 'auto';
+                });
+            });
+        
+      
+
+      
     })
+
+   
+
+
+
+
 }
 export default mobileNav;

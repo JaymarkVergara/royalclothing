@@ -1,6 +1,6 @@
 .about{
     margin-top: 75px;
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -14,9 +14,9 @@
 
 }
 
-.about-description-container{
+/* .about-description-container{ */
     /* width: 50ch; */
-}
+/* } */
 
 .about-btn{
     margin-top: 2.5rem;
