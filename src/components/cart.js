@@ -90,11 +90,12 @@ const cart = () => {
     function productAddToCart(title,price,pimg){
         let cartShopBox = document.createElement('div');
         cartShopBox.classList.add('cart-box');
+        
         let cartItems = document.getElementsByClassName('cart-container')[0];
         let cartItemName = cartItems.getElementsByClassName('cart-product-title')
         for(let i = 0; i < cartItemName.length; i++){
             if(cartItemName[i].innerHTML  === title){
-                alert('you already have this item to cart');
+                alert(`${title} was already added to cart`);
                 return;
             }
         }
@@ -113,6 +114,7 @@ const cart = () => {
     
         cartShopBox.innerHTML = cartBoxContent;
         cartItems.append(cartShopBox);
+        alert(`${title} (${price}) added to cart`);
         cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem);
         cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
    
