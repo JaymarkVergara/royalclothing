@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 .featured-box{
@@ -19,6 +20,8 @@
 .featured-box img{
     width: 100%;
     margin-bottom: 10px;
+    height: 100px;
+    object-fit: contain;
 }
 .featured-box:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
@@ -55,9 +58,11 @@
 }
 
 
-.featured-content-box:hover {
+
+
+/* .featured-content-box:hover { */
     /* border: 1px solid var(--clr-dark); */
-}
+/* } */
 
 .featured-content-box:hover img{
     transform: scale(0.8);

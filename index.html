@@ -20,7 +20,7 @@
           <a class="header-logo" href="#"><img src="/pic/royallogo.png"></a>
         </div>
         <ul class="header-menu">
-          <li><a class="header-links" href="#">Home</a></li>
+          <li><a class="header-links activez" href="#home">Home</a></li>
           <li><a class="header-links" href="#shop">Shop</a></li>
           <li><a class="header-links" href="#about">About</a></li>
           <li><a class="header-links" href="#contact">Contact</a></li>
@@ -101,7 +101,7 @@
             <a class="mobile-header-logo" href="#"><img src="/pic/royallogo.png"></a>
           </div>
 
-            <li><a class="mobile-nav-link" href="#">Home</a></li>
+            <li><a class="mobile-nav-link" href="#home">Home</a></li>
             <li><a class="mobile-nav-link" href="#shop">Shop</a></li>
             <li><a class="mobile-nav-link" href="#about">About</a></li>
             <li><a class="mobile-nav-link" href="#contact">Contact</a></li>
@@ -111,7 +111,7 @@
     <!--End Mobile Nav-->
 
     <main>
-      <section class="home container ">
+      <section id="home" class="home container">
 
         <div class="swiper home-slider">
             <div class="swiper-wrapper wrapper">
@@ -167,17 +167,17 @@
           </div>
 
           <div class="featured-box">
-            <img src="/flogo/truck.png" >
+            <img src="/flogo/order.png" >
             <h6>Online Order</h6>
           </div>
 
           <div class="featured-box">
-            <img src="/flogo/truck.png" >
+            <img src="/flogo/sales.png" >
             <h6>Sale 1st every month</h6>
           </div>
 
           <div class="featured-box">
-            <img src="/flogo/truck.png" >
+            <img src="public/flogo/shop.png" >
             <h6>Quality Products</h6>
           </div>
         </section>
@@ -220,7 +220,7 @@
             
         </section>
 
-        <section class="shop container" id="shop">
+        <section id="shop" class="shop container section" >
           <h2 class="shop-title">Royal Products</h2>
         <div class="shop-content">
             <div class="product-container">
@@ -290,7 +290,7 @@
         </div>  
       </section>
 
-      <section class="about container" id="about">
+      <section class="about container section" id="about">
         <h2 class="shop-title">About Us</h2>
         <div class="about-container">
 
@@ -309,8 +309,9 @@
       </section>
 
 
-      <section class="contact container" id="contact">
-   
+      <section id="contact" class="container section">
+        <h2 class="shop-title">Contact Us</h2>
+        <div class="contact">
         <div class="contact-in">
             <div class="contact-map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123349.74500735095!2d120.7227612854537!3d14.954937226181652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396564b41cc5e23%3A0xa6b7b5e9b0734854!2sApalit%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1703557432085!5m2!1sen!2sph" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -324,6 +325,7 @@
                     <input type="submit" name="submit" class="contact-btn" />
                 </form>
             </div>
+        </div>
         </div>
     </section>
 

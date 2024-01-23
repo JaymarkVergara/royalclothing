@@ -15,8 +15,10 @@ import '../styles/utils.css'
  import cart from './components/cart'
  import user from './components/user'
  import mobileNav from './components/mobilenav'
+ import LinkActive from './components/LinkActive'
 
  slides();
  cart();
  user();
  mobileNav();
+ LinkActive();

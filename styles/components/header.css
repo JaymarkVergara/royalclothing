@@ -1,6 +1,12 @@
 body{
     height: 1000px;
 }
+
+nav a.activez{
+    color: var(--clr-dark);
+    text-decoration: underline;
+}
+
 .header{
     height: 70px;
     background-color: var(--clr-light);
@@ -86,7 +92,7 @@ body{
     width: 100%;
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    padding: 5px;
+    padding: 10px;
     border-radius: 50px;
     margin-top: 10px;
 }
@@ -113,12 +119,12 @@ body{
     width: 100%;
     height: 30px;
     color: var(--clr-dark);
-    padding: 10px;
+    padding: 15px;
     margin: 5px 0;
 }
 
 .user-login-container input::placeholder{
-    color: var(--clr-dark);
+    color: var(--clr-gray-600);
 }
 
 
@@ -275,6 +281,7 @@ a:active {
 .header-menu{
     display: none;
 }
+
 
 
 /* xs */
